@@ -1,0 +1,461 @@
+
+--------------------------------------------
+-------- DOS SHELL ------------------------
+----------------------------------------------
+
+
+D:\2013\Learn\rails_ex>rails new demo_app
+      create
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/secret_token.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.1.1)
+Using i18n (0.6.9)
+Using minitest (4.7.5)
+Using multi_json (1.8.2)
+Using atomic (1.1.14)
+Using thread_safe (0.1.3)
+Using tzinfo (0.3.38)
+Using activesupport (4.0.1)
+Using builder (3.1.4)
+Using erubis (2.7.0)
+Using rack (1.5.2)
+Using rack-test (0.6.2)
+Using actionpack (4.0.1)
+Using mime-types (1.25.1)
+Using polyglot (0.3.3)
+Using treetop (1.4.15)
+Using mail (2.5.4)
+Using actionmailer (4.0.1)
+Using activemodel (4.0.1)
+Using activerecord-deprecated_finders (1.0.3)
+Using arel (4.0.1)
+Using activerecord (4.0.1)
+Using bundler (1.3.5)
+Using coffee-script-source (1.6.3)
+Using execjs (2.0.2)
+Using coffee-script (2.2.0)
+Using thor (0.18.1)
+Using railties (4.0.1)
+Using coffee-rails (4.0.1)
+Using hike (1.2.3)
+Using jbuilder (1.5.3)
+Using jquery-rails (3.0.4)
+Using json (1.8.1)
+Using tilt (1.4.1)
+Using sprockets (2.10.1)
+Using sprockets-rails (2.0.1)
+Using rails (4.0.1)
+Using rdoc (3.12.2)
+Using sass (3.2.13)
+Using sass-rails (4.0.1)
+Using sdoc (0.3.20)
+Using sqlite3 (1.3.8)
+Using turbolinks (2.1.0)
+Using uglifier (2.4.0)
+Your bundle is complete!
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+
+D:\2013\Learn\rails_ex>cd demo_app
+
+D:\2013\Learn\rails_ex\demo_app>bundle
+Your Ruby version is 1.9.3, but your Gemfile specified 2.0.0
+
+D:\2013\Learn\rails_ex\demo_app>bundle
+Fetching gem metadata from https://rubygems.org/..........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Bundler could not find compatible versions for gem "activesupport":
+  In snapshot (Gemfile.lock):
+    activesupport (4.0.1)
+
+  In Gemfile:
+    rails (= 4.0.2) x86-mingw32 depends on
+      activesupport (= 4.0.2) x86-mingw32
+
+Running `bundle update` will rebuild your snapshot from scratch, using only
+the gems in your Gemfile, which may resolve the conflict.
+
+D:\2013\Learn\rails_ex\demo_app>bundle update
+Fetching gem metadata from https://rubygems.org/..........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.1.1)
+Using i18n (0.6.9)
+Using minitest (4.7.5)
+Using multi_json (1.8.2)
+Using atomic (1.1.14)
+Using thread_safe (0.1.3)
+Using tzinfo (0.3.38)
+Using activesupport (4.0.2)
+Using builder (3.1.4)
+Using erubis (2.7.0)
+Using rack (1.5.2)
+Using rack-test (0.6.2)
+Using actionpack (4.0.2)
+Using mime-types (1.25.1)
+Using polyglot (0.3.3)
+Using treetop (1.4.15)
+Using mail (2.5.4)
+Installing actionmailer (4.0.2)
+Using activemodel (4.0.2)
+Using activerecord-deprecated_finders (1.0.3)
+Using arel (4.0.1)
+Using activerecord (4.0.2)
+Using bundler (1.3.5)
+Using coffee-script-source (1.6.3)
+Using execjs (2.0.2)
+Using coffee-script (2.2.0)
+Using thor (0.18.1)
+Installing railties (4.0.2)
+Using coffee-rails (4.0.1)
+Using hike (1.2.3)
+Installing jbuilder (1.0.2)
+Using jquery-rails (3.0.4)
+Using json (1.8.1)
+Installing pg (0.15.1)
+Using tilt (1.4.1)
+Using sprockets (2.10.1)
+Using sprockets-rails (2.0.1)
+Installing rails (4.0.2)
+Installing rails_serve_static_assets (0.0.2)
+Installing rails_stdout_logging (0.0.3)
+Installing rails_12factor (0.0.2)
+Using rdoc (3.12.2)
+Using sass (3.2.13)
+Using sass-rails (4.0.1)
+Using sdoc (0.3.20)
+Using sqlite3 (1.3.8)
+Installing turbolinks (1.1.1)
+Installing uglifier (2.1.1)
+Your bundle is updated!
+
+D:\2013\Learn\rails_ex\demo_app>git init
+'git' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\2013\Learn\rails_ex\demo_app>
+
+
+-------------------------------------------------------------------
+-------- CREATE NEW (EMPTY) REPO called DEMO_APP on GIT HUB -------
+------------------------------------------------------------------
+
+https://github.com/adhulappanavar/demo_app.git
+
+
+
+---------------------------------------
+--------- GIT BASH SHELL -------------
+--------------------------------------
+xa18@INLTD08187 /d/2013/Learn/rails_ex (master)
+$ cd demo_app/
+
+xa18@INLTD08187 /d/2013/Learn/rails_ex/demo_app (master)
+$ git init
+Initialized empty Git repository in d:/2013/Learn/rails_ex/demo_app/.git/
+
+xa18@INLTD08187 /d/2013/Learn/rails_ex/demo_app (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Gemfile.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Gemfile.lock.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in README.rdoc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Rakefile.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/assets/javascripts/application.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/assets/stylesheets/application.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/controllers/application_controller.r
+b.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/helpers/application_helper.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/views/layouts/application.html.erb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in bin/bundle.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in bin/rails.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in bin/rake.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config.ru.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/application.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/boot.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/database.yml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/environment.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/environments/development.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/environments/production.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/environments/test.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/backtrace_silencers.
+rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/filter_parameter_log
+ging.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/inflections.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/mime_types.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/secret_token.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/session_store.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/wrap_parameters.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/locales/en.yml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/routes.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in db/seeds.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in public/404.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in public/422.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in public/500.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in public/robots.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in test/test_helper.rb.
+The file will have its original line endings in your working directory.
+
+xa18@INLTD08187 /d/2013/Learn/rails_ex/demo_app (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) e41710b] Initial Commit
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Gemfile.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Gemfile.lock.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in README.rdoc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Rakefile.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/assets/javascripts/application.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/assets/stylesheets/application.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/controllers/application_controller.r
+b.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/helpers/application_helper.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/views/layouts/application.html.erb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in bin/bundle.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in bin/rails.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in bin/rake.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config.ru.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/application.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/boot.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/database.yml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/environment.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/environments/development.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/environments/production.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/environments/test.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/backtrace_silencers.
+rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/filter_parameter_log
+ging.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/inflections.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/mime_types.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/secret_token.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/session_store.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/initializers/wrap_parameters.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/locales/en.yml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/routes.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in db/seeds.rb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in public/404.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in public/422.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in public/500.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in public/robots.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in test/test_helper.rb.
+The file will have its original line endings in your working directory.
+ 53 files changed, 808 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 README.rdoc
+ create mode 100644 Rakefile
+ create mode 100644 app/assets/images/.keep
+ create mode 100644 app/assets/javascripts/application.js
+ create mode 100644 app/assets/stylesheets/application.css
+ create mode 100644 app/controllers/application_controller.rb
+ create mode 100644 app/controllers/concerns/.keep
+ create mode 100644 app/helpers/application_helper.rb
+ create mode 100644 app/mailers/.keep
+ create mode 100644 app/models/.keep
+ create mode 100644 app/models/concerns/.keep
+ create mode 100644 app/views/layouts/application.html.erb
+ create mode 100644 bin/bundle
+ create mode 100644 bin/rails
+ create mode 100644 bin/rake
+ create mode 100644 config.ru
+ create mode 100644 config/application.rb
+ create mode 100644 config/boot.rb
+ create mode 100644 config/database.yml
+ create mode 100644 config/environment.rb
+ create mode 100644 config/environments/development.rb
+ create mode 100644 config/environments/production.rb
+ create mode 100644 config/environments/test.rb
+ create mode 100644 config/initializers/backtrace_silencers.rb
+ create mode 100644 config/initializers/filter_parameter_logging.rb
+ create mode 100644 config/initializers/inflections.rb
+ create mode 100644 config/initializers/mime_types.rb
+ create mode 100644 config/initializers/secret_token.rb
+ create mode 100644 config/initializers/session_store.rb
+ create mode 100644 config/initializers/wrap_parameters.rb
+ create mode 100644 config/locales/en.yml
+ create mode 100644 config/routes.rb
+ create mode 100644 db/seeds.rb
+ create mode 100644 lib/assets/.keep
+ create mode 100644 lib/tasks/.keep
+ create mode 100644 log/.keep
+ create mode 100644 public/404.html
+ create mode 100644 public/422.html
+ create mode 100644 public/500.html
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/robots.txt
+ create mode 100644 test/controllers/.keep
+ create mode 100644 test/fixtures/.keep
+ create mode 100644 test/helpers/.keep
+ create mode 100644 test/integration/.keep
+ create mode 100644 test/mailers/.keep
+ create mode 100644 test/models/.keep
+ create mode 100644 test/test_helper.rb
+ create mode 100644 vendor/assets/javascripts/.keep
+ create mode 100644 vendor/assets/stylesheets/.keep
+
+xa18@INLTD08187 /d/2013/Learn/rails_ex/demo_app (master)
+$ git remote add origin https://github.com/adhulappanavar/demo_app.git
+
+xa18@INLTD08187 /d/2013/Learn/rails_ex/demo_app (master)
+$ git push -u origin master
+Username for 'https://github.com': adhulappanavar
+Password for 'https://adhulappanavar@github.com':(anilgetsetgo)
+Counting objects: 60, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (60/60), 14.02 KiB | 0 bytes/s, done.
+Total 60 (delta 2), reused 0 (delta 0)
+To https://github.com/adhulappanavar/demo_app.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+xa18@INLTD08187 /d/2013/Learn/rails_ex/demo_app (master)
+$
